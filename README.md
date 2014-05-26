@@ -2,10 +2,10 @@ BBSubmit
 ========
 
 Backburner renderdusmanageri tööde lisamise kasutajaliides.
-Kirjutatud C++ ja Qt Toolkit'i abil.
+Kirjutatud C++ keeles, kasutab Qt Toolkit'i abi.
 
 
 Backburner render manager submission UI.
-Written in C++ and uses Qt Toolkit
+Written in C++ and uses Qt Toolkit.
 
 
