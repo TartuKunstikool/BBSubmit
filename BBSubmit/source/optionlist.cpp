@@ -1,5 +1,8 @@
 #include "optionlist.h"
 
+/*!
+ * \brief New OptionList instance. Key-value pairs of command line arguments.
+ */
 OptionList::OptionList(QWidget *parent) :
     QTableWidget(parent)
 {
@@ -14,6 +17,9 @@ OptionList::OptionList(QWidget *parent) :
 }
 
 
+/*!
+ * \brief Clear table
+ */
 void OptionList::clear()
 {
     while (rowCount() > 0)

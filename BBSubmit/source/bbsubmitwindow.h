@@ -15,6 +15,10 @@ class QTableWidgetItem;
 QT_END_NAMESPACE
 class OptionList;
 
+
+/*!
+ * \brief Main GUI class
+ */
 class BBSubmitWindow : public QWidget
 {
     Q_OBJECT

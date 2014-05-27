@@ -3,6 +3,11 @@
 
 #include <QTableWidget>
 
+/*!
+ * \brief Table class for command line options table.
+ *
+ * Inherits QTableWidget.
+ */
 class OptionList : public QTableWidget
 {
     Q_OBJECT

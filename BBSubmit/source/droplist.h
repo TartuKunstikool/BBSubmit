@@ -7,6 +7,12 @@ QT_BEGIN_NAMESPACE
 class QMimeData;
 QT_END_NAMESPACE
 
+
+/*!
+ * \brief File list table class
+ *
+ *  Accepts drop events. Inherits QTableWidget.
+ */
 class DropList : public QTableWidget
 {
     Q_OBJECT

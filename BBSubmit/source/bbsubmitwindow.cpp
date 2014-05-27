@@ -5,7 +5,11 @@
 #include "droplist.h"
 #include "optionlist.h"
 
-
+/*!
+ * \brief Main GUI window.
+ *
+ * Contains files table and argument lists.
+ */
 BBSubmitWindow::BBSubmitWindow()
 {
     abstractLabel = new QLabel(tr("Drag and drop files for Backburner submission"));
@@ -52,6 +56,12 @@ BBSubmitWindow::BBSubmitWindow()
 }
 
 
+/*!
+ * \brief Update table of files.
+ *
+ * Accepts drag&drop events with multiple files.
+ * \param filePath Concatenated paths of dropped files as QString
+ */
 void BBSubmitWindow::updateFilesTable(const QString filePath)
 {
     QStringList fileList;
@@ -70,13 +80,16 @@ void BBSubmitWindow::updateFilesTable(const QString filePath)
             appendToFileList(row, s.simplified());
         }
     }
-    //filesTable->resizeColumnToContents(0);
     filesTable->resizeRowsToContents();
     filesTable->setCurrentCell(filesTable->rowCount()-1, 0);
     updateOptionsTable(filesTable->currentItem());
 }
 
 
+/*!
+ * \brief Update options table based on selected file in table of files.
+ * \param item Selected item in files table as QTableWidgetItem
+ */
 void BBSubmitWindow::updateOptionsTable(QTableWidgetItem *item)
 {
     optionsTable->clear();
@@ -94,9 +107,14 @@ void BBSubmitWindow::updateOptionsTable(QTableWidgetItem *item)
         }
         c++;
     }
+    optionsTable->resizeRowsToContents();
 }
 
-
+/*!
+ * \brief Appends full default command string for new added file to fileList QStringList
+ * \param row
+ * \param filePath Full directory path of file.
+ */
 void BBSubmitWindow::appendToFileList(int row, QString filePath)
 {
     QStringList keyString;
@@ -116,6 +134,9 @@ void BBSubmitWindow::appendToFileList(int row, QString filePath)
 }
 
 
+/*!
+ * \brief Clear table of files.
+ */
 void BBSubmitWindow::clearFileList()
 {
     fileList.clear();
