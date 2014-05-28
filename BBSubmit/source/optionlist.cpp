@@ -13,6 +13,7 @@ OptionList::OptionList(QWidget *parent) :
     setColumnCount(2);
     setColumnWidth(0, 80);
     setColumnWidth(1, 80);
+
     clear();
 }
 

@@ -19,6 +19,7 @@ DropList::DropList(QWidget *parent)
     setAutoFillBackground(true);
     setColumnCount(4);
     setColumnWidth(0, 300);
+
     clear();
 }
 

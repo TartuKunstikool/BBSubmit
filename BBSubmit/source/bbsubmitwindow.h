@@ -17,7 +17,9 @@ class OptionList;
 
 
 /*!
- * \brief Main GUI class
+ * \brief Main GUI.
+ *
+ * Contains table of files to be submitted and table of attributes for each file.
  */
 class BBSubmitWindow : public QWidget
 {
@@ -27,6 +29,9 @@ public:
     BBSubmitWindow();
     void appendToFileList(int row, QString filePath);
     void clearFileList();
+    QStringList createTasks(QString framerange, int numTasks);
+    QString createCommand(int file);
+    void submitCommand(QString command);
 
 public slots:
     void updateFilesTable(const QString filePath);
@@ -44,6 +49,7 @@ private:
 
     QList<QStringList> fileList;
     QList<QHash<QString, QString> > *fileHash;
+
 };
 
 #endif // DROPSITEWINDOW_H

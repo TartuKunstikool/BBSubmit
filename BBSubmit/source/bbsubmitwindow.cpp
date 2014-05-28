@@ -26,6 +26,7 @@ BBSubmitWindow::BBSubmitWindow()
 
     optionsTable = new OptionList;
     optionsTable->setHorizontalHeaderLabels(optionLabels);
+    optionsTable->horizontalHeader()->setStretchLastSection(true);
 
     clearButton = new QPushButton(tr("Clear"));
     quitButton = new QPushButton(tr("Submit"));
@@ -140,4 +141,38 @@ void BBSubmitWindow::appendToFileList(int row, QString filePath)
 void BBSubmitWindow::clearFileList()
 {
     fileList.clear();
+}
+
+
+/*!
+ * \brief Create task subcommand strings.
+ * \param framerange Framerange or frames to be split into tasks.
+ * \param numTasks Number of tasks wanted.
+ * \return
+ */
+QStringList BBSubmitWindow::createTasks(QString framerange, int numTasks)
+{
+    QStringList tasks;
+    return tasks;
+}
+
+/*!
+ * \brief Create submit command for one file.
+ * \param file File number in list of files.
+ * \return
+ */
+QString BBSubmitWindow::createCommand(int file)
+{
+    QString command;
+    return command;
+}
+
+
+/*!
+ * \brief Submit one Backburner command.
+ * \param command Command for submission.
+ */
+void BBSubmitWindow::submitCommand(QString command)
+{
+
 }

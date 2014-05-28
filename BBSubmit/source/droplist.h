@@ -9,7 +9,7 @@ QT_END_NAMESPACE
 
 
 /*!
- * \brief File list table class
+ * \brief Table of files to be submitted.
  *
  *  Accepts drop events. Inherits QTableWidget.
  */

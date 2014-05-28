@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'droplist.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.1.0)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'droplist.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.1.0. It"
+#error "This file was generated using the moc from 5.3.0. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,12 +20,12 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_DropList_t {
     QByteArrayData data[8];
-    char stringdata[72];
+    char stringdata[71];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    offsetof(qt_meta_stringdata_DropList_t, stringdata) + ofs \
-        - idx * sizeof(QByteArrayData) \
+    qptrdiff(offsetof(qt_meta_stringdata_DropList_t, stringdata) + ofs \
+        - idx * sizeof(QByteArrayData)) \
     )
 static const qt_meta_stringdata_DropList_t qt_meta_stringdata_DropList = {
     {
@@ -39,7 +39,7 @@ QT_MOC_LITERAL(6, 56, 8),
 QT_MOC_LITERAL(7, 65, 5)
     },
     "DropList\0changed\0\0const QMimeData*\0"
-    "mimeData\0fileDropped\0filePath\0clear\0"
+    "mimeData\0fileDropped\0filePath\0clear"
 };
 #undef QT_MOC_LITERAL
 
@@ -57,13 +57,13 @@ static const uint qt_meta_data_DropList[] = {
        4,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   39,    2, 0x05,
-       1,    0,   42,    2, 0x25,
-       5,    1,   43,    2, 0x05,
-       5,    0,   46,    2, 0x25,
+       1,    1,   39,    2, 0x06 /* Public */,
+       1,    0,   42,    2, 0x26 /* Public | MethodCloned */,
+       5,    1,   43,    2, 0x06 /* Public */,
+       5,    0,   46,    2, 0x26 /* Public | MethodCloned */,
 
  // slots: name, argc, parameters, tag, flags
-       7,    0,   47,    2, 0x0a,
+       7,    0,   47,    2, 0x0a /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
